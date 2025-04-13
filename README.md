@@ -2,6 +2,10 @@ Portfolio Website.
 
 A modern, responsive personal portfolio website built with React and styled with Tailwind CSS. This website showcases my skills and projects with smooth animations and interactive elements.
 
+![portfolio2](https://github.com/user-attachments/assets/dd46e352-897c-4d1a-94bb-224117d8bc0a)
+
+![portfolio](https://github.com/user-attachments/assets/fb11d016-0c3f-40a8-b3c6-25d58605b656)
+
  Features
 
  Interactive UI - Custom cursor effects, smooth scroll animations, and interactive elements.
