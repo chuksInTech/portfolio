@@ -76,9 +76,13 @@ Mobile layout with collapsible navigation menu
 Touch-friendly elements for mobile devices
 
 If you have any question please feel free to reach out to me:
+
 GitHub: chuksInTech
+
 X (Twitter): x.com/chuksInTech
+
 Email: chyootch@gmail.com
+
 
 Made with 💗 by Chukwuma Duru(chuksInTech)
 
