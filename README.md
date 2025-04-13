@@ -79,7 +79,7 @@ If you have any question please feel free to reach out to me:
 
 GitHub: chuksInTech
 
-X (Twitter): x.com/chuksInTech
+X (Twitter): @chuksInTech
 
 Email: chyootch@gmail.com
 
