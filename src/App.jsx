@@ -357,10 +357,10 @@ const App = () => {
 
             <ScrollFadeIn direction="left" delay={0.3}>
               <p className="text-lg text-gray-300 mb-6">
-                LLM & AI Agent Engineer specializing in RAG systems, fine-tuning, and scalable AI solutions. I design and deploy high-performance language model applications with optimized RAG, efficient fine-tuning, and robust agent frameworks—turning cutting-edge research into production-ready AI systems.
+                LLM & AI Engineer specializing in RAG, fine-tuning, and AI agents. I build production-ready language systems—from optimized retrieval to efficient model tuning—bridging research with real-world applications
               </p>
               <p className="text-lg text-gray-300 mb-8">
-                My recent works include an AI Chatbot, an AI Quiz Generator that automates adaptive assessment creation using language models, My-Tutor—an educational AI assistant delivering accurate answers across all subjects. I'm constantly pushing boundaries in AI engineering to build intelligent, scalable systems that bridge cutting-edge research with real-world applications.              </p>
+                My recent projects include an AI Chatbot, Quiz Generator, and My-Tutor (educational assistant). I focus on creating scalable AI solutions that push technical boundaries. </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <h3 className="text-xl font-bold text-blue-400 mb-2">Technologies</h3>
