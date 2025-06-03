@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react';
 const AnimatedLaptop = () => {
     const [visibleLines, setVisibleLines] = useState(0);
     const [isVisible, setIsVisible] = useState(false);
-    
+
     const codeLines = [
-        "import React from 'react';",
+        "from openai import OpenAI",
+        "import gradio as gr;",
         "function App() {",
         "  const [movies, setMovies] = useState([]);",
         "  useEffect(() => {",
@@ -51,14 +52,14 @@ const AnimatedLaptop = () => {
             {/* Background gradient */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-900/10 to-transparent"></div>
             <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tl from-blue-900/20 to-transparent rounded-full blur-3xl"></div>
-            
+
             {/* Laptop Component */}
             <div className={`transition-all duration-1000 delay-300 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} relative w-full max-w-md mx-auto`}>
                 {/* Laptop shadow */}
                 <div className="absolute -bottom-8 left-0 right-0 h-32 blur-xl z-0">
                     <div className="w-full h-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full transform skew-y-6 opacity-60 animate-shadow-pulse"></div>
                 </div>
-                
+
                 {/* Laptop with rotation effect */}
                 <div className="relative transform rotate-6 hover:rotate-0 transition-transform duration-500">
                     {/* Laptop Body */}
@@ -67,7 +68,7 @@ const AnimatedLaptop = () => {
                         <div className="bg-gray-900 rounded overflow-hidden aspect-video relative
                             after:absolute after:inset-0 after:border after:border-blue-500/10 after:pointer-events-none
                             before:absolute before:inset-0 before:bg-gradient-to-br before:from-blue-500/5 before:via-transparent before:to-purple-500/5">
-                            
+
                             {/* Code Editor Interface */}
                             <div className="absolute inset-0 bg-gray-950 p-3">
                                 <div className="flex gap-2 mb-3">
@@ -221,7 +222,7 @@ const AnimatedLaptop = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 {/* Code particles floating around */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     {Array.from({ length: 15 }).map((_, i) => (
@@ -241,7 +242,7 @@ const AnimatedLaptop = () => {
                     ))}
                 </div>
             </div>
-            
+
             {/* CSS animations */}
             <style jsx>{`
                 @keyframes float {

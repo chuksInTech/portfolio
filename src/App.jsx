@@ -114,7 +114,7 @@ const App = () => {
 
   const projects = [
     {
-      id: 1,
+      id: 5,
       title: "Movie Finder App",
       description: "A React-based application that allows users to search for movies, view details, and save favorites/watchlist. Implements modern React hooks, Authentication, movie interaction, userPreferences, profile management, context API, and responsive design.",
       tags: ["React", "API Integration", "Responsive Design", "Context API"],
@@ -133,12 +133,36 @@ const App = () => {
     },
     {
       id: 3,
-      title: "Coming Soon",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit. Proin accumsan maximus. Ut laoreet Sed nisl sapien, fringilla vel imperdiet vel, vehicula id odio. Aenean quis augue nec urna finibus aliquam. Pellentesque vitae magna non eros placerat blandit a id augue. Pellentesque facilisis, nisi id porttitor varius.",
-      tags: ["Lorem", "Fermentum", "Imperdiet", "Libero"],
-      image: "./imageai.png",
-      github: "https://github.com/yourusername/weather-app",
-      live: "https://weather.yourdomain.com"
+      title: "AI Chatbot",
+      description: "A flexible and customizable chatbot built with OpenAI's GPT models and Gradio, designed for business applications with dynamic system prompting capabilities, real-time response generation for better user experience, pre-configured for retail/sales scenarios with customizable prompts.",
+      tags: ["Python", "OpenAI", "Jupyter", "Gradio"],
+      image: "./chatbot.png",
+      github: "https://github.com/chuksInTech/chatbot",
+      // live: "https://weather.yourdomain.com"
+    },
+    {
+      id: 4,
+      title: "AI-Quiz-Generator",
+      description: "An AI-powered quiz generator that creates quizzes based on user-provided topics, auto-evaluated answers with feedback, multiple-choice questions with 4 options, leveraging OpenAI's GPT-4o model for dynamic question generation and Gradio for a user-friendly interface.",
+      tags: ["Python", "dotenv", "Gradio", "GPT-4o"],
+      image: "./quiz.png",
+      github: "https://github.com/chuksInTech/AI-Quiz-Generator",
+    },
+    {
+      id: 1,
+      title: "My Tutor",
+      description: "MyTutor is a powerful, stream-based, interactive command-line AI assistant that uses both OpenAI and Ollama models to help users learn programming, academic subjects, and general knowledge effectively.",
+      tags: ["Python", "GPT-4o-mini", "Ollama", "Stream"],
+      image: "./my-tutor.png",
+      github: "https://github.com/chuksInTech/my-tutor"
+    },
+    {
+      id: 6,
+      title: "Competitive-analyser",
+      description: "A powerful Python tool that scrapes companies' websites and performs comprehensive competitive analysis using OpenAI's GPT-4 model. The tool extracts company information, compares competitors, and generates detailed reports.",
+      tags: ["Python", "BeautifulSoup", "GPT-4", "Selenium"],
+      image: "./competitive-analyser.png",
+      github: "https://github.com/chuksInTech/competitive-analyser"
     }
   ];
 
@@ -209,7 +233,7 @@ const App = () => {
               I'm <span className='bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>Chukwuma Duru</span>
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-xl mb-8 mx-auto lg:mx-0">
-              Crafting modern web experiences with clean code and stunning UI
+              Building cutting-edge AI-powered web experiences with scalable code, elegant interfaces, and seamless LLM integration.
             </p>
             <div className="flex gap-4 mb-6 flex-wrap justify-center lg:justify-start">
               <button
@@ -248,7 +272,7 @@ const App = () => {
           {/* Laptop Container */}
           <div className="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0">
             {/* <div className="w-full max-w-md"> */}
-              <AnimatedLaptop />
+            <AnimatedLaptop />
             {/* </div> */}
           </div>
         </div>
@@ -321,9 +345,9 @@ const App = () => {
                     <img src="./ai-generated.jpg" alt="Developer" className="w-full h-full object-cover rounded-md" />
                   </div>
                   <div className="flex gap-2 flex-wrap">
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">React</span>
-                    <span className="px-3 py-1 bg-yellow-500/20 rounded-full text-sm text-yellow-300">ES6+</span>
-                    <span className="px-3 py-1 bg-pink-500/20 rounded-full text-sm text-pink-300">Tailwind</span>
+                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">Python</span>
+                    <span className="px-3 py-1 bg-yellow-500/20 rounded-full text-sm text-yellow-300">React</span>
+                    <span className="px-3 py-1 bg-pink-500/20 rounded-full text-sm text-pink-300">Jupyter</span>
                     <span className="px-3 py-1 bg-purple-500/20 rounded-full text-sm text-purple-300">Context API</span>
                     <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">Router</span>
                   </div>
@@ -333,28 +357,29 @@ const App = () => {
 
             <ScrollFadeIn direction="left" delay={0.3}>
               <p className="text-lg text-gray-300 mb-6">
-                I'm a passionate React developer with expertise in building dynamic, responsive web applications. With a focus on clean code and intuitive user interfaces, I transform ideas into seamless digital experiences.
+                LLM & AI Agent Engineer specializing in RAG systems, fine-tuning, and scalable AI solutions. I design and deploy high-performance language model applications with optimized retrieval-augmented generation (RAG), efficient fine-tuning, and robust agent frameworks—turning cutting-edge research into production-ready AI systems.
               </p>
               <p className="text-lg text-gray-300 mb-8">
-                My recent work includes a Movie Finder application that showcases my abilities with appwrite as backend, context API, and third-party integrations. I'm constantly learning and adopting new technologies to deliver cutting-edge solutions.
-              </p>
+                My recent works include an AI Chatbot, an AI Quiz Generator that automates adaptive assessment creation using language models, My-Tutor—an educational AI assistant delivering textbook-accurate answers across all subjects through RAG and custom fine-tuning, and a Movie Finder  that showcases my abilities with appwrite as backend. I'm constantly pushing boundaries in AI engineering to build intelligent, scalable systems that bridge cutting-edge research with real-world applications.              </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <h3 className="text-xl font-bold text-blue-400 mb-2">Technologies</h3>
                   <ul className="space-y-1 text-gray-300">
+                    <li>• OpenAI/Ollama/Anthropic</li>
+                    <li>• Python</li>
                     <li>• React (JavaScript)</li>
                     <li>• HTML5 / CSS3 / Tailwind</li>
-                    <li>• Context API</li>
                     <li>• Appwrite SDK</li>
                   </ul>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-blue-400 mb-2">Tools</h3>
                   <ul className="space-y-1 text-gray-300">
+                    <li>• Gradio</li>
                     <li>• Git / GitHub</li>
                     <li>• Vite</li>
-                    <li>• Figma</li>
-                    <li>• TMDB API</li>
+                    <li>• Jupyter</li>
+                    <li>• Selenium</li>
                   </ul>
                 </div>
               </div>
@@ -436,7 +461,7 @@ const App = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <ScrollFadeIn direction="right" delay={0.2}>
               <p className="text-lg text-gray-300 mb-6">
-              I'm currently open to freelance collaborations and full-time positions. Hit me up let me help bring your vision to life with creative solutions.
+                I'm currently open to freelance collaborations and full-time positions. Hit me up let me help bring your vision to life with creative solutions.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
